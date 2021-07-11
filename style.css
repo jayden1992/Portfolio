@@ -1,0 +1,23 @@
+/* Global */
+
+/* Color */
+
+/* Font size */
+--font-large::
+--font-medium:
+--font-regular:
+--font-small:
+--font-micro:
+
+/* Font weight */
+--weight-bold
+--weight-semi-bold
+--weight-regular
+
+/* Size */
+
+/* Universal tags */
+
+* {
+  box-sizing: border-box;
+}
