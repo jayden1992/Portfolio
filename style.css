@@ -30,7 +30,11 @@
 
   /* Size */
   --size-border-radius: 4px;
+
+  /* Annimation */
+  --annimation-duration: 300ms;
 }
+
 /* Universal tags */
 * {
   box-sizing: border-box;
@@ -102,6 +106,7 @@ p {
 .navbar__menu {
   display: flex;
 }
+
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
@@ -153,3 +158,64 @@ p {
 .home__contactMe:hover {
   background-color: var(--color-dark-purple);
 }
+
+/* Section common */
+
+.section {
+  padding 50px;
+  text-align: center;
+  max-width: 1200px;
+  /* 1000~1200 데스크톱에서 보기 좋은 max-width */
+  margin: auto;
+  /* 한쪽에만 마진이 들어가서 가운데 정렬이 안되면 */
+
+}
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  /* line_height 을 박스 height와 같은 값을 주면,
+  가운데 정렬 가능 */
+  /* background-color: 박스 사이즈를 할때 더 보기 쉽게 사이즈 조절할수있게
+  색깔을 임시로 줌*/
+  font-size: 70px;
+  /* 폰트어썸에서 받아온 아이콘도 폰트이기에 사이즈 조절도 폰트 사이즈로 */
+  color: var(--color-light-purple);
+  margin: auto;
+  border: 1px solid var(--color-light-purple);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.major__icon i {
+  transition: all var(--annimation-duration) ease;
+}
+.major__icon:hover i{
+  color: var(--color-dark-purple);
+  transform: rotate(-10deg) scale(1.2);
+}
+.major__description {
+  font-size: font var(--font-small);
+}
+
+.about__exp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 2px;
+}
+
+.exp__logo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+
+
