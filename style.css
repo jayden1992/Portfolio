@@ -130,6 +130,18 @@ p {
   background-color: var(--color-dark-purple);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 38px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
+/* 기존 위치에서 벗어나 웹페이지 전체 기준으로 움직일수있게 absolute 포지션주고 기준에서
+위에서 아래로 24, 기준에서 오른쪽에서 왼쪽으로 38 위치 준거고 display는 none으로
+해야 안보이다가 미디어쿼리로 768px로 줄어들시에 보이게 설정할것 */
+}
+
 /* Home */
 #home {
   background: url("images/background.png") center/cover no-repeat;
@@ -339,7 +351,7 @@ Value의 값은 HTML에 style="width: XX%"; 으로 색을 채움*/
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;;
+  align-items: center;
   width: 200px;
   height: 250px;
   margin: 2px;
@@ -455,4 +467,49 @@ Value의 값은 HTML에 style="width: XX%"; 으로 색을 채움*/
 .contact__links i:hover {
   transform: scale(1.2);
   color: var(--color-light-purple);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+    /* 반응형 display none인 토글바를 768px 일때 보이도록 block */
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  /*반응형 navbar / toggle button 만드는거  */
+
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .about__exp {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+  /* 화면이 작아져도 아이템은 화면을 채우게 */
+
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
+
 }
