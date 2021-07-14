@@ -436,3 +436,23 @@ Value의 값은 HTML에 style="width: XX%"; 으로 색을 채움*/
 .testimonial__speech-bubble p {
   color: var(--color-light-white);
 }
+
+/* Contact */
+#contact {
+  background-color: var(--color-white);
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__links a {
+  font-size: var(--font-large);
+  color: var(--color-black);
+  margin: 24px 8px;
+}
+
+.contact__links i:hover {
+  transform: scale(1.2);
+  color: var(--color-light-purple);
+}
