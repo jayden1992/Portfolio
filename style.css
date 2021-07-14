@@ -142,6 +142,11 @@ p {
 해야 안보이다가 미디어쿼리로 768px로 줄어들시에 보이게 설정할것 */
 }
 
+.navbar__toggle-btn:hover {
+  transform: scale(1.2);
+  color: var(--color-light-purple);
+}
+
 /* Home */
 #home {
   background: url("images/background.png") center/cover no-repeat;
@@ -500,6 +505,10 @@ Value의 값은 HTML에 style="width: XX%"; 으로 색을 채움*/
 
   .about__exp {
     flex-direction: column;
+  }
+  
+  .exp__name {
+    font-size: var(--font-medium);
   }
 
   .project {
