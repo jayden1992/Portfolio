@@ -388,3 +388,51 @@ Value의 값은 HTML에 style="width: XX%"; 으로 색을 채움*/
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
+
+/* Testmonial */
+#testimonials {
+  background-color: var(--color-backblack);
+}
+.testimonials__title {
+  margin: 30px;
+  color: var(--color-light-white);
+}
+
+.testimonials__desrtiption {
+  color: var(--color-light-white);
+}
+
+.testimonials {
+  margin: 40px;
+}
+
+.testimonial {
+  display: flex;
+  margin: 15px 0;
+}
+
+.testimonial__avatar {
+  width: 140px;
+  height: 140px;
+  border: solid 4px var(--color-light-purple);
+  border-radius: 50%;
+}
+
+.testimonial__avatar:nth-child(odd){
+  margin-right: 40px;
+}
+
+.testimonial__avatar:nth-child(even){
+  margin-left: 40px;
+}
+
+.testimonial__speech-bubble {
+  padding: 18px;
+  margin-bottom: 15px;
+  background-color: var(--color-backblack);
+  border: 2px solid var(--color-light-purple);
+}
+
+.testimonial__speech-bubble p {
+  color: var(--color-light-white);
+}
